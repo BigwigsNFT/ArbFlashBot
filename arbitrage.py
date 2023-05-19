@@ -1,9 +1,11 @@
 import time
+import os
 from typing import List
 from web3 import Web3
 from dotenv import load_dotenv
 from price import fetch_prices, get_price
 from tweet_sentiment import scrape_tweets
+from findarbitrage import find_arbitrage_sequence
 
 # Load environment variables
 load_dotenv()
